@@ -1,0 +1,8 @@
+.idea
+target
+.cljs_node_repl
+.nrepl-history
+.nrepl-port
+.envrc
+project.clj
+out
