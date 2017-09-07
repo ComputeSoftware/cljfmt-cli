@@ -1,5 +1,5 @@
 (def project 'lumo-cljfmt)
-(def version "1.0")
+(def version "1.1")
 
 (set-env! :source-paths #{"src"}
           :dependencies '[[adzerk/boot-cljs-repl "0.3.3"]   ;; latest release
