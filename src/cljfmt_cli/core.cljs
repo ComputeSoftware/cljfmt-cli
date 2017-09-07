@@ -41,7 +41,8 @@
 (defn fix-files
   [{:keys [files indents]}]
   (doseq [f files]
-    (io/spit f (cljfmt/reformat-string (io/slurp f) :indents indents))))
+    (io/spit f (cljfmt/reformat-string (io/slurp f) :indents indents)))
+  {:ok? true})
 
 (defn validate-opts
   [parsed-opts]
