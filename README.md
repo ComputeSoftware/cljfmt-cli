@@ -36,8 +36,9 @@ on their PATH.
 2. Navigate to Tools > External Tools.
 3. Click green plus (+) button to create a new External Tool.
 4. Input a name for your external tool. We'll use cljfmt.
-5. Set program to the location that you installed `cljfmt` to. If `cljfmt` is on your path then you can simply use `cljfmt`.
-6. Set parameters to `--fix $FilePath$`.
+5. Deselect "Open console" (deselecting this will allow the formatter to run in the background with no UI interruptions)
+6. Set program to the location that you installed `cljfmt` to. If `cljfmt` is on your path then you can simply use `cljfmt`.
+7. Set parameters to `--fix $FilePath$`.
 
 To run the external tool, navigate to *Tools > External Tools > cljfmt*. This will run the formatter on your currently
 selected file. 
