@@ -28,6 +28,9 @@ chmod +x target/cljfmt
 Now place cljfmt somewhere convenient on your system. Often users will place it somewhere
 on their PATH.
 
+## Note for Windows
+Windows will not recognize this as an executable file, use `node <path-to-cljfmt>` to execute.
+
 ## Usage in IntelliJ
 
 **Note**: You must have installed the CLI first.
@@ -46,3 +49,17 @@ selected file.
 You can take this one step further and bind the formatter to some keys. To do this, navigate to
 *File > Settings > Keymap*. Then go to *External Tools > External Tools* and find the name of your external tool. 
 Double click it and select "Add Keyboard Shortcut."
+
+## Usage in Atom
+Install the atom-shell-commands plugin (). Open the config file (File->Config...), and add an entry in `commands:` array of the `"atom-shell-commands"` config. Following is an example for Windows:
+
+```
+{
+  name: "cljfmt"
+  command: "node"
+  arguments: ["C:/Users/dave/bin/cljfmt", "--fix", "{FilePath}"]
+  options:
+    keymap: "ctrl-shift-i"
+    save: true
+}
+```
