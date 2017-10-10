@@ -7,7 +7,7 @@ A NodeJS CLI to reformat your Clojure(Script) code using [cljfmt](https://github
 Here is a one-liner to install cljfmt to `/usr/local/bin`:
 
 ```bash
-bash -c 'sudo curl -fsSLo /usr/local/bin/cljfmt https://github.com/ComputeSoftware/cljfmt-cli/releases/download/v1.1/cljfmt && sudo chmod +x /usr/local/bin/cljfmt'
+bash -c 'sudo curl -fsSLo /usr/local/bin/cljfmt https://github.com/ComputeSoftware/cljfmt-cli/releases/download/v1.2/cljfmt && sudo chmod +x /usr/local/bin/cljfmt'
 ```
 
 
