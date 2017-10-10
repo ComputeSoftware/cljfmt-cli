@@ -1,19 +1,19 @@
-(def project 'lumo-cljfmt)
-(def version "1.1")
+(def project 'cljfmt-cli)
+(def version "1.2")
 
 (set-env! :source-paths #{"src"}
           :dependencies '[[adzerk/boot-cljs-repl "0.3.3"]   ;; latest release
-                          [adzerk/boot-cljs "2.1.3" :scope "test"]
-                          [com.cemerick/piggieback "0.2.1" :scope "test"]
+                          [adzerk/boot-cljs "2.1.4" :scope "test"]
+                          [com.cemerick/piggieback "0.2.2" :scope "test"]
                           [weasel "0.7.0" :scope "test"]
-                          [org.clojure/tools.nrepl "0.2.12" :scope "test"]
+                          [org.clojure/tools.nrepl "0.2.13" :scope "test"]
                           [pandeiro/boot-http "0.8.3" :scope "test"]
 
                           [org.clojure/clojure "1.8.0"]
-                          [org.clojure/clojurescript "1.9.908"]
-                          [org.clojure/tools.reader "1.0.1"]
+                          [org.clojure/clojurescript "1.9.946"]
                           [cljsjs/nodejs-externs "1.0.4-1"]
-                          [cljfmt "0.5.7"]
+                          [rewrite-cljs "0.4.4"]
+                          [cljfmt "0.5.7" :exclusions [rewrite-cljs]]
                           [org.clojure/tools.cli "0.3.5"]])
 
 (require
